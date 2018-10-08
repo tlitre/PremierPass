@@ -1,6 +1,19 @@
 # PremierPass
+#Pass Training system.
 
-Pass Training system.
+##Executive Summary
+###The Problem
+
+The purpose of this project is to design the structure of a passing training system for the Men’s and Women’s Northwestern Soccer Teams. We began with a system using rigid gates and bright, centrally located light indicators designed by a prior team in DSGN 384. Our goal is to create a system that can reliably sense balls entering a goal, communicate the data to a central location, and inform users of their performance on an interactive and easy to use platform.  
+
+###Our Solution  
+
+The PremierPass System consists of four metal goals that can be arrayed in any way by the user to best help them practice their passing. The goals feature LED lights to indicate which goal should be passed to, nets to contain the balls, a staking system to keep the goals in place during the drill, and a transportation system to help the user transport the drill parts. The system is equipped with infrared (IR) sensors to detect successful passes. PremierPass records data about the performance of individual players and displays it on a web app.  
+
+###How it works  
+
+The rigidly connected metal goal protects the electronics and allows it to remain in place with repeated ball impacts. The LED lighting is bright and conspicuous enough to be used both indoors and outdoors and in many different lighting conditions. IR sensors are used to detect whether balls pass through the plane of the goal. This data is aggregated and communicated wirelessly to a web app displayed on a user’s personal device. Netting behind the goal contains the balls during the drill without interfering with the sensors and while maintaining ease of transportation. The 3D-printed stakes also help to keep the system in place upon soccer ball impacts to present reset of the drill. The transportation system utilizes a cart that can contain all the goals, a ball bag, battery chargers, and the measuring tape used for setup.  
+
 
 ## Getting Started
 
