@@ -1,0 +1,352 @@
+* {
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  background: #1f252d;
+  -webkit-text-size-adjust: 100%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left:0;
+  top:0;
+  z-index:1;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #2e394b;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto 0;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+  height: 1%;
+  width: 10%;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    outline: 3px solid black;
+    margin: 9px 0;
+}
+
+.menu-btn:active {
+  opacity: 0.2;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+section.one {
+  background: #7B1FA2;
+  -webkit-transition-delay: 0s;
+}
+section.two {
+  background: #512DA8;
+  -webkit-transition-delay: 0.05s;
+}
+section.three {
+  background: #FF9800;
+  -webkit-transition-delay: 0.1s;
+}
+section.four {
+  background: #ff5722;
+  -webkit-transition-delay: 0.15s;
+}
+section.after {
+  -webkit-transform: translateY(100%);
+}
+
+.nameButton {
+  display: initial;
+}
+
+.playButton {
+  position: relative;
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+  border: 0px;
+  background-color: white;
+  margin-left: 15px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.playScreen {
+  text-align: center;
+  align-items: center;
+}
+
+#timeButtons {
+  display: none;
+}
+
+#ballButtons {
+  display: none;
+}
+
+#playLogin {
+  display: block;
+}
+
+#statLogin {
+  display: block;
+}
+
+#statScreen {
+  display: none;
+}
+
+#countDown {
+  display: none;
+}
+
+#readyScreen {
+  display: none;
+}
+
+#newScreen {
+  display: none;
+}
+
+
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+  line-height: 70px;
+  -webkit-user-select: none;
+}
+
+h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 50px;
+  width: 85%;
+  margin-left: 10%;
+  margin-top: 8%;
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+p {
+  color: white;
+  font-weight: 450;
+  font-size: 42px;
+  width: 85%;
+  margin-left: 10%;
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+input {
+	display: block;
+	margin: 2em auto;
+	border: none;
+	padding: 0;
+	width: 12ch;
+	background: repeating-linear-gradient(90deg,
+		white 0, white 1ch,
+		transparent 0, transparent 1.5ch)
+		0 100%/ 12ch .25ch no-repeat;
+	font: 8ch monospace;
+	letter-spacing: .5ch;
+  color: white;
+}
+
+.page-one section.one {
+  -webkit-transition-delay: 0s;
+}
+.page-one section.two {
+  -webkit-transition-delay: 0.15s;
+}
+.page-one section.three {
+  -webkit-transition-delay: 0.1s;
+}
+.page-one section.four {
+  -webkit-transition-delay: 0.05s;
+}
+
+.page-two section.one {
+  -webkit-transition-delay: 0s;
+}
+.page-two section.two {
+  -webkit-transition-delay: 0.05s;
+}
+.page-two section.three {
+  -webkit-transition-delay: 0.1s;
+}
+.page-two section.four {
+  -webkit-transition-delay: 0.05s;
+}
+
+.menu-open section {
+  cursor: pointer;
+}
+.menu-open section.one {
+  -webkit-transform: translateY(12%);
+  -webkit-transition-delay: 0.15s;
+}
+.menu-open section.one:active {
+  background: #7B1FA2;
+}
+.menu-open section.two {
+  -webkit-transform: translateY(24%);
+  -webkit-transition-delay: 0.1s;
+}
+.menu-open section.two:active {
+  background: #512DA8;
+}
+.menu-open section.three {
+  -webkit-transform: translateY(36%);
+  -webkit-transition-delay: 0.05s;
+}
+.menu-open section.three:active {
+  background: #FF9800;
+}
+.menu-open section.four {
+  -webkit-transform: translateY(48%);
+  -webkit-transition-delay: 0s;
+}
+.menu-open section.four:active {
+  background: #ff5722;
+}
+.menu-open.page-one section.one {
+  -webkit-transition-delay: 0s;
+}
+.menu-open.page-one section.two {
+  -webkit-transition-delay: 0.05s;
+}
+.menu-open.page-one section.three {
+  -webkit-transition-delay: 0.1s;
+}
+.menu-open.page-one section.four {
+  -webkit-transition-delay: 0.15s;
+}
+.menu-open.page-two section.one {
+  -webkit-transition-delay: 0s;
+}
+.menu-open.page-two section.two {
+  -webkit-transition-delay: 0.05s;
+}
+.menu-open.page-two section.three {
+  -webkit-transition-delay: 0.1s;
+}
+.menu-open.page-two section.four {
+  -webkit-transition-delay: 0.15s;
+}
+
+#leadWrapper {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+}
+#leadWrapper::before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.leaderboard {
+  background-color: #123;
+  color: #eee;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 5%;
+  box-shadow: 2px 5px 15px rgba(17, 34, 51, 0.5);
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.leaderboard h2 {
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+}
+.leaderboard p {
+  margin: 3px 10px;
+  text-align: right;
+  color: #567;
+}
+.leaderboard ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.leaderboard ol li {
+  counter-increment: leaderboard-num;
+  padding: 15px 50px;
+  position: relative;
+  transition-duration: 0.3s;
+  font-size: 30px;
+}
+
+.leaderboard ol li::before {
+  content: counter(leaderboard-num);
+  display: block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: #345;
+  text-align: center;
+  position: absolute;
+  left: 15px;
+}
+.leaderboard ol li:nth-of-type(1) {
+  background-color: #4d5e6f;
+}
+.leaderboard ol li:nth-of-type(2) {
+  background-color: #435465;
+}
+.leaderboard ol li:nth-of-type(3) {
+  background-color: #394a5b;
+}
+.leaderboard ol li:nth-of-type(4) {
+  background-color: #2f4051;
+}
+.leaderboard ol li:nth-of-type(5) {
+  background-color: #253647;
+}
+.leaderboard ol li:nth-of-type(6) {
+  background-color: #1b2c3d;
+}
+.leaderboard ol li .percent {
+  position: absolute;
+  right: 15px;
+}
+.leaderboard ol li:hover {
+  transform: scale(1.1);
+}
+.leaderboard ol:hover li:not(:hover) {
+  opacity: 0.3;
+}
